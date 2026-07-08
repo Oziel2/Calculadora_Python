@@ -57,17 +57,17 @@ while True:
 
     if escolha == '1':
         resultado = calc.soma(num1, num2)
-        print("Resultado:", resultado)
+        print("O resultado é:", resultado)
     elif escolha == '2':
         resultado = calc.subtracao(num1, num2)
-        print("Resultado:", resultado)
+        print("O resultado é:", resultado)
     elif escolha == '3':
         resultado = calc.multiplicacao(num1, num2)
-        print("Resultado:", resultado)
+        print("O resultado é:", resultado)
     elif escolha == '4':
         if num2 != 0:
             resultado = calc.divisao(num1, num2)
-            print("Resultado:", resultado)
+            print("O resultado é:", resultado)
         else:
             print("Erro: Divisão por zero não é permitida.")
     elif escolha == '5':
@@ -75,6 +75,6 @@ while True:
         limpar_console()
         break
     else:
-        print("Escolha inválida. Tente novamente.")
+        print("Escolha inválida. Tente novamente!!")
 
       

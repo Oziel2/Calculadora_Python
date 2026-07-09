@@ -50,6 +50,8 @@ while True:
     print("3. Multiplicação")
     print("4. Divisão")
     print("5. Sair")
+    print("6. Sair")
+
 
     escolha = input("Digite sua escolha (1/2/3/4/5): ")
 

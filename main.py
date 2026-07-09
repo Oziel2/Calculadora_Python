@@ -1,4 +1,6 @@
+
 import os
+import math
 
 def limpar_console():
     # os.name retorna 'nt' se for Windows e 'posix' se for Linux/macOS
@@ -37,7 +39,13 @@ class Calculadora:
         print("Divisão de", num1, "e", num2)
         return num1 / num2
 
-calc = Calculadora() #para chamar a classe
+    def raiz_quadrada(self, num1):
+        limpar_console()
+        print("Raiz quadrada de", num1)
+        return math.sqrt(num1)
+
+
+calc = Calculadora()  # para chamar a classe
 limpar_console()
 while True:
 
@@ -49,13 +57,10 @@ while True:
     print("2. Subtração")
     print("3. Multiplicação")
     print("4. Divisão")
-    print("5. Sair")
+    print("5. Raiz quadrada")
     print("6. Sair")
 
-
-    escolha = input("Digite sua escolha (1/2/3/4/5): ")
-
-
+    escolha = input("Digite sua escolha (1/2/3/4/5/6): ")
 
     if escolha == '1':
         resultado = calc.soma(num1, num2)
@@ -73,6 +78,12 @@ while True:
         else:
             print("Erro: Divisão por zero não é permitida.")
     elif escolha == '5':
+        if num1 < 0:
+            print("Erro: não é possível calcular raiz quadrada de número negativo.")
+        else:
+            resultado = calc.raiz_quadrada(num1)
+            print("O resultado é:", resultado)
+    elif escolha == '6':
         print("Saindo...")
         limpar_console()
         break

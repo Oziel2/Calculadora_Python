@@ -1,5 +1,6 @@
 
 
+
 # Atualização da Calculadora — v1.2
 
 ## Novidades
@@ -15,4 +16,4 @@
 * Criados os métodos `potenciacao()` e `porcentagem()` na classe `Calculadora`, mantendo o padrão visual das demais funções com o `limpar_console()` e a exibição da mensagem descritiva no console antes do retorno.
 * Texto do menu e validação de `input()` atualizados para incluir as novas opções (1 a 8).
 
-## Observação conhecida
+s

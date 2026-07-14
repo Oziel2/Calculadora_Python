@@ -1,17 +1,24 @@
 
 
-  Atualização da Calculadora — v1.1
-   Novidades
- **Adicionada a função de Raiz Quadrada**: agora é possível calcular a raiz quadrada de um número diretamente pelo menu (opção 5).
+  Aqui está a nota de atualização referente às funções de **Potenciação** e **Porcentagem**, seguindo o mesmo estilo e estrutura do seu texto:
 
- Correções de bugs
-- **Opção 5 corrigida**: antes, ao escolher "5. Raiz quadrada", o programa encerrava a execução por engano (esse comportamento pertencia à opção de sair). Agora a opção 5 realmente calcula a raiz quadrada.
-- **Opção 6 implementada**: a opção "Sair" agora está corretamente vinculada ao número 6, que antes não tinha nenhum tratamento e caía na mensagem de "escolha inválida".
+---
 
-# Melhorias técnicas
-- Importada a biblioteca `math` para uso da função `math.sqrt()`.
-- Criado o método `raiz_quadrada()` na classe `Calculadora`, seguindo o mesmo padrão visual (limpeza de console + mensagem) dos demais métodos.
-- Texto de input do menu atualizado para refletir todas as opções disponíveis (1 a 6).
+# Atualização da Calculadora — v1.2
 
-# Observação conhecida
-- O programa ainda solicita dois números antes de exibir o menu, mesmo quando a operação escolhida (como a raiz quadrada) só usa um deles. Isso não afeta o funcionamento, mas pode ser ajustado futuramente para melhorar a experiência do usuário.
+## Novidades
+
+* **Adicionadas as funções de Potenciação e Porcentagem**: agora é possível elevar um número a uma potência e calcular percentuais diretamente pelo menu (opções 7 e 8).
+
+## Correções de bugs
+
+* **Tratamento no envio dos parâmetros**: corrigido o problema onde os nomes das variáveis no menu causam confusão na leitura. Na porcentagem, os valores agora são repassados explicitamente como `total` e `percentual` para evitar inversão no cálculo.
+
+## Melhorias técnicas
+
+* Criados os métodos `potenciacao()` e `porcentagem()` na classe `Calculadora`, mantendo o padrão visual das demais funções com o `limpar_console()` e a exibição da mensagem descritiva no console antes do retorno.
+* Texto do menu e validação de `input()` atualizados para incluir as novas opções (1 a 8).
+
+## Observação conhecida
+
+* Na função de porcentagem, a ordem de entrada dos números importa (primeiro o valor total, depois o percentual desejado). A interface será ajustada em versões futuras para deixar esse fluxo mais intuitivo.

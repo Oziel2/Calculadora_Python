@@ -44,6 +44,15 @@ class Calculadora:
         print("Raiz quadrada de", num1)
         return math.sqrt(num1)
 
+    def potenciacao(self, num1, num2):
+        limpar_console()
+        print(f"Potenciação: {num1} elevado a {num2}")
+        return num1 ** num2
+    
+    def porcentagem(self, num1, num2  ):
+        limpar_console()
+        print(f"Calculando {num2}% de {num1}")
+        return (num1 * num2) / 100
 
 calc = Calculadora()  # para chamar a classe
 limpar_console()
@@ -58,9 +67,11 @@ while True:
     print("3. Multiplicação")
     print("4. Divisão")
     print("5. Raiz quadrada")
-    print("6. Sair")
+    print("6. Potenciação")
+    print("7. Porcentagem")
+    print("8. Sair")
 
-    escolha = input("Digite sua escolha (1/2/3/4/5/6): ")
+    escolha = input("Digite sua escolha (1/2/3/4/5/6/7/8): ")
 
     if escolha == '1':
         resultado = calc.soma(num1, num2)
@@ -84,10 +95,14 @@ while True:
             resultado = calc.raiz_quadrada(num1)
             print("O resultado é:", resultado)
     elif escolha == '6':
+        resultado = calc.potenciacao(num1, num2)
+        print("O resultado é:", resultado)
+    elif escolha == '7':
+        resultado = calc.porcentagem(num1, num2)
+        print("O resultado é:", resultado)
+    elif escolha == '8':
         print("Saindo...")
         limpar_console()
         break
     else:
         print("Escolha inválida. Tente novamente!!")
-
-      
